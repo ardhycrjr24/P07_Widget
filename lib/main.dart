@@ -1,3 +1,4 @@
+import 'dart:html' as html;
 import 'package:flutter/material.dart';
 
 import 'steps/step1_text.dart';
@@ -23,11 +24,79 @@ void main() {
   runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatefulWidget {
   const MainApp({Key? key}) : super(key: key);
 
   @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
+  int _currentStep = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    html.window.addEventListener('message', (html.Event event) {
+      if (event is html.MessageEvent) {
+        final val = int.tryParse(event.data.toString());
+        if (val != null) {
+          setState(() {
+            _currentStep = val;
+          });
+        }
+      }
+    });
+  }
+
+  Widget _getStepWidget(int step) {
+    switch (step) {
+      case 1:
+        return const Step1App();
+      case 2:
+        return const Step2App();
+      case 3:
+        return const Step3App();
+      case 4:
+        return const Step4App();
+      case 5:
+        return const Step5App();
+      case 6:
+        return const Step6App();
+      case 7:
+        return const Step7App();
+      case 8:
+        return const Step8App();
+      case 9:
+        return const Step9App();
+      case 10:
+        return const Step10App();
+      case 11:
+        return const Step11App();
+      case 12:
+        return const Step12App();
+      case 13:
+        return const Step13App();
+      case 14:
+        return const Step14App();
+      case 15:
+        return const Step15App();
+      case 16:
+        return const Step16App();
+      case 17:
+        return const Step17App();
+      case 18:
+        return const Step18App();
+      default:
+        return const DashboardPage();
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    if (_currentStep > 0) {
+      return _getStepWidget(_currentStep);
+    }
     return MaterialApp(
       title: 'Praktikum 7 - Widget Dasar',
       debugShowCheckedModeBanner: false,
