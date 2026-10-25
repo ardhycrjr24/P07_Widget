@@ -1,9 +1,9 @@
+# P07 - Widget pada Flutter
+
 **Nama:** Ardiansyah  
 **NIM:** 6304250091  
 **Kelas:** RPL3D Rekayasa Perangkat Lunak (RPL)  
 **Dosen Pengampu:** Depandi Enda, S.ST., M.Kom
-
-# P07 - Widget pada Flutter
 
 Praktikum 7 mata kuliah Pemrograman Multiplatform: mempelajari widget dasar pada Flutter framework, mencakup pengenalan StatelessWidget dan StatefulWidget, Text styling, ElevatedButton dan event handling dialog, penataan tata letak menggunakan Row dan Column, manajemen jarak (Margin, Border, Padding), penanganan aset gambar dan ikon, serta penyelesaian 3 studi kasus evaluasi mandiri.
 
