@@ -33,8 +33,6 @@ P07_Widget/
 │   ├── logo_polbeng.png                 # Logo kampus Politeknik Negeri Bengkalis
 │   ├── logo_kemdikbud.jpg               # Logo Kemdikbud
 │   └── logo_vokasi.jpg                  # Logo Vokasi Kuat (Pengujian Modul)
-├── screenshots/                         # Tangkapan layar hasil eksekusi 18 step
-│   ├── step_01.png s.d. step_18.png
 ├── lib/
 │   ├── steps/                           # Berkas modular tiap tahapan percobaan
 │   │   ├── step1_text.dart              # Step 1: Text Widget & Styling

@@ -26,6 +26,11 @@ migrate_working_dir/
 *.pdf
 ~$*
 
+# Tangkapan layar / screenshots laporan
+screenshots/
+images/screenshots/
+
+
 # Environment
 .env
 .env.local
