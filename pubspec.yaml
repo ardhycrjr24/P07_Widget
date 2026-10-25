@@ -57,6 +57,7 @@ flutter:
   assets:
     - images/logo_polbeng.png
     - images/logo_kemdikbud.jpg
+    - images/logo_kemdikbud2.jpg
     - images/logo_vokasi.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
